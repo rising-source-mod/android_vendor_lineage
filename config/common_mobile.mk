@@ -8,11 +8,19 @@ include vendor/lineage/config/aosp_audio.mk
 # Include Lineage audio files
 include vendor/lineage/config/lineage_audio.mk
 
+PRODUCT_PACKAGES += \
+    Backgrounds 
+
+ifeq ($(TARGET_SHIP_LINEAGE_PREBUILTS), true)
 # Apps
 PRODUCT_PACKAGES += \
-    Backgrounds \
-    Glimpse \
+    Glimpse
+endif
+
+ifneq ($(WITH_GMS), true)
+PRODUCT_PACKAGES += \
     LatinIME
+endif
 
 # Charger
 PRODUCT_PACKAGES += \
