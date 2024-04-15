@@ -6,11 +6,11 @@ endif
 
 # crDroid System Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.crdroid.build.version=$(LINEAGE_VERSION) \
-    ro.crdroid.display.version=$(LINEAGE_DISPLAY_VERSION) \
-    ro.crdroid.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(CR_VERSION) \
-    ro.crdroidlegal.url=https://crdroid.net/legal.php
+    ro.rising.build.version=$(RISING_BUILD_VERSION) \
+    ro.rising.display.version=$(RISING_DISPLAY_VERSION) \
+    ro.rising.version=$(RISING_VERSION) \
+    ro.modversion=$(RISING_VERSION) \
+    ro.risinglegal.url=https://risingtechoss.github.io/legal.php
 
 # LineageOS Platform SDK Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
