@@ -224,9 +224,9 @@ endif
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
-    Settings \
+    SettingsGoogle \
     CarSystemUI \
-    SystemUI
+    SystemUIGoogle
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
