@@ -227,7 +227,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     NexusLauncherRelease \
     SettingsGoogle \
     CarSystemUI \
-    SystemUIGoogle
+    SystemUIGoogle \
+    Lawnchair
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
