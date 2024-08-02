@@ -61,9 +61,14 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-im
 PRODUCT_PACKAGES += \
     BatteryStatsViewer \
     GameSpace \
-    MatLog \
     OmniJaws \
     OmniStyle
+
+TARGET_SHIPS_MATLOG =? false
+ifeq ($(TARGET_SHIPS_MATLOG),true)
+PRODUCT_PACKAGES += \
+    MatLog 
+endif
 
 ifeq ($(TARGET_SUPPORTS_64_BIT_APPS),true)
 PRODUCT_PACKAGES += \
