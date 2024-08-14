@@ -17,10 +17,8 @@ PRODUCT_PACKAGES += \
     Glimpse
 endif
 
-ifneq ($(WITH_GMS), true)
 PRODUCT_PACKAGES += \
     LatinIME
-endif
 
 # Charger
 PRODUCT_PACKAGES += \
